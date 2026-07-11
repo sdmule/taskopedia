@@ -1,26 +1,37 @@
-import { createRoot } from 'react-dom/client'
+import { createRoot } from "react-dom/client";
 
-const root = createRoot(document.getElementById('root'))
+const root = createRoot(document.getElementById("root"));
 
-function HomePage(){
-    return (
-        <div>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-            <h1>Hello</h1>
-        </div>
-)
+function HomePage() {
+  return (
+    <div>
+      <Header />
+      <p>
+        We are super excited to learn React to become .Net Full Stack Developer
+      </p>
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <div>
+      <h1>Welcome to the React Course!</h1>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div>
+      <h1>Made with Love by sdmule</h1>
+    </div>
+  );
 }
 
 root.render(
   <div>
-  < HomePage />
-  < HomePage />
-  < HomePage />
-  < HomePage />
-  </div>
-)
-
-
-
-
+    <HomePage />
+  </div>,
+);
