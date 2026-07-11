@@ -1,11 +1,12 @@
 import { createRoot } from 'react-dom/client'
 
+const root = createRoot(document.getElementById('root'))
 
 function homePage(){
     return <h1>Hello</h1>
 }
 
-createRoot(document.getElementById('root')).render(
+root.render(
   homePage()
 )
 
