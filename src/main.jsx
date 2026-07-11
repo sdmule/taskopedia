@@ -1,17 +1,14 @@
-// import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 
-// createRoot(document.getElementById('root')).render(
-//   <h1>
-//     Hello!!
-//   </h1>
-// )
 
-const rootElement = document.getElementById('root');
+function homePage(){
+    return <h1>Hello</h1>
+}
 
-const h1Element = document.createElement("h1")
+createRoot(document.getElementById('root')).render(
+  homePage()
+)
 
-h1Element.textContent = "Hello World!!";
 
-rootElement.appendChild(h1Element)
 
 
