@@ -9,13 +9,18 @@ const lectureCount = 30;
 const isActive = true;
 
 function Students() {
-  const fullName = "Kris Walley";
-  const programmingExp = 2;
+  const fullName = "Saurabh Mule";
+  const programmingExp = 3.5;
 
   return (
     <div className="container p-4 bg-success my-3 rounded">
-      <div className="row border">
-        <div className="col-2">IMAGE</div>
+      <div className="row border p-2">
+        <div className="col-2">
+          <img
+            src={`https://ui-avatars.com/api/${fullName}`}
+            style={{ maxWidth: "50px" }}
+          ></img>
+        </div>
         <div className="col-8">
           {fullName} <br />
           Coding Experience {programmingExp} years
