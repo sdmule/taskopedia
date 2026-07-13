@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import "./style.css";
 
 const root = createRoot(document.getElementById("root"));
 const pageStyle = {
@@ -11,7 +12,7 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <p>
+      <p className="customHeading">
         We are super excited to learn React to become .Net Full Stack Developer
       </p>
       <Footer />
