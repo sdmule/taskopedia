@@ -3,6 +3,7 @@ import "./style.css";
 import { Header } from "./Layout/header";
 import { Footer } from "./Layout/footer";
 import Students from "./Students";
+import StudentReview from "./StudentReview";
 
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
@@ -32,7 +33,9 @@ function HomePage() {
       </div>
       <hr />
       <h5 className="pt-2">Students Enrolled</h5>
-      <Students experience={3.8} fullName="Sauarbh Mule" />
+      <Students experience={3.8} fullName="Sauarbh Mule">
+        <StudentReview />
+      </Students>
       <Students experience={2} fullName="Dhanaraj Yedke" />
       <Students experience={1} fullName="Sumit Mule" />
       <Footer />

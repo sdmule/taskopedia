@@ -12,6 +12,7 @@ function Students(props) {
           {props.fullName} <br />
           Coding Experience {props.experience} years
         </div>
+        <div className="col-2">{props.children}</div>
       </div>
     </div>
   );
