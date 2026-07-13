@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
   return (
     <div>
       <p>Made with Love by sdmule</p>
@@ -6,4 +6,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+//export default Footer;
