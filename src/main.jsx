@@ -2,6 +2,9 @@ import { createRoot } from "react-dom/client";
 import "./style.css";
 
 const root = createRoot(document.getElementById("root"));
+const courseName = "React";
+const lectureCount = 30;
+const isActive = true;
 const pageStyle = {
   textAlign: "center",
   backgroundColor: "lightgray",
@@ -15,6 +18,16 @@ function HomePage() {
       <p className="customHeading">
         We are super excited to learn React to become .Net Full Stack Developer
       </p>
+      <h3>Topics to learn in the {courseName} Course</h3>
+      <p>Lecture Count - {lectureCount}</p>
+      <p>Is Active : {isActive.toString()}</p>
+      <p>Is Active : {isActive ? "Active" : "Inactive"}</p>
+      <ul>
+        <li>JSX</li>
+        <li>Components</li>
+        <li>Routing</li>
+        <li>State Management</li>
+      </ul>
       <Footer />
     </div>
   );
@@ -33,7 +46,7 @@ function Header() {
 function Footer() {
   return (
     <div>
-      <h1>Made with Love by sdmule</h1>
+      <p>Made with Love by sdmule</p>
     </div>
   );
 }
