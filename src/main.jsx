@@ -28,6 +28,10 @@ function HomePage() {
         <li>Routing</li>
         <li>State Management</li>
       </ul>
+      <div>
+        Enter Task :{" "}
+        <input type="text" maxLength={6} disabled={isActive}></input>
+      </div>
       <Footer />
     </div>
   );
