@@ -2,33 +2,12 @@ import { createRoot } from "react-dom/client";
 import "./style.css";
 import { Header } from "./Layout/header";
 import { Footer } from "./Layout/footer";
+import Students from "./Students";
 
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
 const lectureCount = 30;
 const isActive = true;
-
-function Students() {
-  const fullName = "Saurabh Mule";
-  const programmingExp = 3.5;
-
-  return (
-    <div className="container p-4 bg-success my-3 rounded">
-      <div className="row border p-2">
-        <div className="col-2">
-          <img
-            src={`https://ui-avatars.com/api/${fullName}`}
-            style={{ maxWidth: "50px" }}
-          ></img>
-        </div>
-        <div className="col-8">
-          {fullName} <br />
-          Coding Experience {programmingExp} years
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function HomePage() {
   return (
@@ -51,7 +30,11 @@ function HomePage() {
         Enter Task :{" "}
         <input type="text" maxLength={6} disabled={isActive}></input>
       </div>
-      <Students />
+      <hr />
+      <h5 className="pt-2">Students Enrolled</h5>
+      <Students experience={3.8} fullName="Sauarbh Mule" />
+      <Students experience={2} fullName="Dhanaraj Yedke" />
+      <Students experience={1} fullName="Sumit Mule" />
       <Footer />
     </div>
   );
