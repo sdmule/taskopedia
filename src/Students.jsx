@@ -1,4 +1,4 @@
-function Students(props) {
+const Students = (props) => {
   return (
     <div className="container p-4 bg-success my-3 rounded">
       <div className="row border p-2">
@@ -16,6 +16,6 @@ function Students(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Students;
