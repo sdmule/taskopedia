@@ -1,15 +1,12 @@
 import { createRoot } from "react-dom/client";
 import "./style.css";
+import Header from "./Layout/header";
+import Footer from "./Layout/footer";
 
 const root = createRoot(document.getElementById("root"));
 const courseName = "React";
 const lectureCount = 30;
 const isActive = true;
-const pageStyle = {
-  textAlign: "center",
-  backgroundColor: "lightgray",
-  padding: "10px",
-};
 
 function HomePage() {
   return (
@@ -33,24 +30,6 @@ function HomePage() {
         <input type="text" maxLength={6} disabled={isActive}></input>
       </div>
       <Footer />
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <div>
-      <h1 style={pageStyle} className="text-success">
-        Welcome to the React Course!
-      </h1>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div>
-      <p>Made with Love by sdmule</p>
     </div>
   );
 }
